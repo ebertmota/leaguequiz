@@ -38,8 +38,18 @@ export const Widget = styled.div`
         width: 100%;
         left: 0;
         padding: 0 20px;
+
+        @media (max-width: 900px) {
+          position: relative;
+          padding: 0;
+        }
       }
     }
+  }
+
+  @media (max-width: 900px) {
+    min-height: 0;
+    min-width: 0;
   }
 `;
 
@@ -58,10 +68,6 @@ export const WidgetHeader = styled.header`
 export const WidgetContent = styled.div`
   padding: 20px;
   position: relative;
-  img {
-    top: 20%;
-    position: absolute;
-  }
 `;
 
 export const WidgetCover = styled.div`

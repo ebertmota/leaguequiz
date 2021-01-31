@@ -15,3 +15,14 @@ export const WidgetContainer = styled.div`
     width: 250px;
   }
 `;
+
+export const Logo = styled.div`
+  width: 120px;
+  height: 120px;
+  background: red;
+  background-image: url(${props => props.src});
+  background-size: cover;
+  background-position: center;
+  border-radius: 60px;
+  margin-bottom: 20px;
+`;

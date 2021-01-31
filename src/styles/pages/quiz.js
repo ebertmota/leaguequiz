@@ -27,6 +27,11 @@ export const QuestionContainer = styled.ul`
   padding: 0;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 900px) {
+    min-height: 0;
+    min-width: 0;
+  }
 `;
 
 export const QuestionItem = styled.li`

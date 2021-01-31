@@ -71,7 +71,7 @@ function Quiz() {
   );
 
   return (
-    <TemplateContainer backgroundImage={db.bg}>
+    <TemplateContainer backgroundImage={db.bg3}>
       <QuizContainer>
         <Widget maxWidth="600px">
           <WidgetHeader>
