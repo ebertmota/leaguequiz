@@ -1,41 +1,77 @@
 import styled from 'styled-components';
 
-const Widget = styled.div`
-  margin-top: 24px;
-  margin-bottom: 24px;
-  border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: ${({ theme }) => theme.colors.mainBg};
+export const Widget = styled.div`
+  position: relative;
+  width: 100%;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: ${props => props.maxWidth || '400px'};
+  background: #f5f5f5;
+  color: #000;
   border-radius: 4px;
   overflow: hidden;
+
   h1 {
-    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    text-align: center;
+  }
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    form {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      > div {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        left: 0;
+        padding: 0 20px;
+      }
+    }
   }
 `;
 
-Widget.Content = styled.div`
-  padding: 24px 32px 32px 32px;
-  & > *:first-child {
-    margin-top: 0;
-  }
-  & > *:last-child {
-    margin-bottom: 0;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-`;
-
-Widget.Header = styled.div`
+export const WidgetHeader = styled.header`
+  background: ${props => props.theme.colors.primary};
+  color: #fff;
+  padding: 0 20px;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 18px 32px;
-  background-color: ${({ theme }) => theme.colors.primary};
+  width: 100%;
 
-  * {
-    margin: 0;
+  h1 {
+    font-size: 20px;
   }
 `;
 
-export default Widget;
+export const WidgetContent = styled.div`
+  padding: 20px;
+  position: relative;
+  img {
+    top: 20%;
+    position: absolute;
+  }
+`;
+
+export const WidgetCover = styled.div`
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-color: #c4c4c4;
+  background-image: url(${props => props.src});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: background 0.2s;
+`;

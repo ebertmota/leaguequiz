@@ -6,19 +6,20 @@ const Button = styled.button`
   padding: 10px;
   font-size: 16px;
   font-weight: bold;
-  border: 1px solid;
+  border: 0;
   transition: background 0.2s;
-  background: ${({ theme }) => theme.colors.secondary};
-  color: #222;
+  background: #d13639;
+  color: #fff;
   border-radius: 5px;
 
   &:hover {
-    background: #e8a30a;
+    /* background: ${({ theme }) => theme.colors.success}; */
   }
 
   &:disabled {
     cursor: not-allowed;
-    background: #666;
+    background: #c3c3c3;
+    color: #333;
   }
 `;
 

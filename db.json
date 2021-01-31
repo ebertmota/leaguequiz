@@ -1,28 +1,36 @@
 {
-  "bg": "https://images7.alphacoders.com/830/thumb-1920-830343.png",
+  "bg": "https://jllsly.com/wallpapers/league-of-legends-thresh-dark-star-wallpapers-high-resolution-Is-Cool-Wallpapers.jpg",
+  "bg2": "https://images2.alphacoders.com/559/thumb-1920-559456.jpg",
+  "bg3": "https://images4.alphacoders.com/641/thumb-1920-641848.jpg",
+  "bg4": "https://images.alphacoders.com/613/613663.jpg",
+  "bg5": "https://images5.alphacoders.com/645/thumb-1920-645557.jpg",
+  "bg6": "https://images5.alphacoders.com/475/thumb-1920-475905.jpg",
   "title": "Quiz CSS da Alura",
   "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://media1.giphy.com/media/iHU3HFN76lm43bWAdj/giphy.gif?cid=ecf05e47uhlc9x5iaib28pq7ragjonu068b9purfv8lm8uec&rid=giphy.gif",
+      "title": "Qual a frase mais icônica de todo o competitivo brasileiro de League of legends?",
       "description": "Essa é pra aquecer",
       "answer": 2,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Cade o dream team?",
+        "Caiu na vila o peixe fuzila.",
+        "Ele morreu e falou: é o grongos.",
+        "Sem meu Luci eu não consigo."
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
+      "image": "https://media3.giphy.com/media/ChCgHHOUW3G7u/giphy.gif?cid=ecf05e4716d9af7f60404a2d1ae6091802363520534d1e33&rid=giphy.gif",
+      "title": "Qual o campeão mais irritante da lista?",
       "description": "Faz tempo em haha",
-      "answer": 0,
+      "answer": 3,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Master YI",
+         "Teemo",
+         "Lulu",
+         "Lux",
+         "Yasuo"
       ]
     }
   ],

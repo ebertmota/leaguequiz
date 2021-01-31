@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 const Input = styled.input`
-  margin: 20px 0;
+  margin: 10px 0;
   width: 100%;
   background: transparent;
   padding: 12px;
   font-size: 14px;
-  border: 1px solid #c9c9c9;
-  color: #c9c9c9;
-  background: transparent;
+  border: 0;
+  color: #222;
+  background: #e0e0e0;
   border-radius: 5px;
 `;
 

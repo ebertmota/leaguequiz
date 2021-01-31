@@ -24,6 +24,14 @@ html, body {
   min-height: 100vh;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 #__next {
   flex: 1;
   display: flex;
