@@ -1,10 +1,4 @@
 {
-  "bg": "https://jllsly.com/wallpapers/league-of-legends-thresh-dark-star-wallpapers-high-resolution-Is-Cool-Wallpapers.jpg",
-  "bg2": "https://images2.alphacoders.com/559/thumb-1920-559456.jpg",
-  "bg3": "https://images4.alphacoders.com/641/thumb-1920-641848.jpg",
-  "bg4": "https://images.alphacoders.com/613/613663.jpg",
-  "bg5": "https://images5.alphacoders.com/645/thumb-1920-645557.jpg",
-  "bg6": "https://images5.alphacoders.com/475/thumb-1920-475905.jpg",
   "title": "Quiz CSS da Alura",
   "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
   "questions": [
@@ -29,8 +23,7 @@
          "Master YI",
          "Teemo",
          "Lulu",
-         "Lux",
-         "Yasuo"
+         "Lux"
       ]
     }
   ],
@@ -39,7 +32,7 @@
   ],
   "theme": {
     "colors": {
-      "primary": "#3F51B5",
+      "primary": "#1B6AA8",
       "secondary": "#ffc107",
       "mainBg": "#171B35",
       "contrastText": "#FFFFFF",
