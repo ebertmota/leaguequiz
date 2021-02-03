@@ -10,6 +10,7 @@ export const Widget = styled.div`
   justify-content: center;
   max-width: ${props => props.maxWidth || '400px'};
   background: #f5f5f5;
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.2);
   color: #000;
   border-radius: 4px;
   overflow: hidden;
@@ -75,6 +76,9 @@ export const WidgetCover = styled.div`
   width: 100%;
   height: 250px;
   background-color: #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url(${props => props.src});
   background-repeat: no-repeat;
   background-size: cover;

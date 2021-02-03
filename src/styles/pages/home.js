@@ -19,10 +19,11 @@ export const WidgetContainer = styled.div`
 export const Logo = styled.div`
   width: 120px;
   height: 120px;
-  background: red;
+  background: ${props => (props.disabled ? '#CCC' : '#d13639')};
   background-image: url(${props => props.src});
   background-size: cover;
   background-position: center;
   border-radius: 60px;
   margin-bottom: 20px;
+  transition: background 0.2s;
 `;

@@ -1,15 +1,7 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
-  background-image: url(${props => props.backgroundImage});
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-`;
-
 export const QuizContainer = styled.div`
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +14,6 @@ export const QuizContainer = styled.div`
 
 export const QuestionContainer = styled.ul`
   min-width: 560px;
-
   width: 100%;
   padding: 0;
   display: flex;
@@ -42,8 +33,8 @@ export const QuestionItem = styled.li`
         `
       : css`
           background: ${props.selected
-            ? 'RGBA(63, 81, 181, 0.9)'
-            : 'RGBA(63, 81, 181, 0.3)'};
+            ? 'RGBA(27, 106, 168, 0.9)'
+            : 'RGBA(27, 106, 168, 0.3)'};
         `}
 
   ${props =>

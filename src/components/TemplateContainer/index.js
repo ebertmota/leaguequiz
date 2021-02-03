@@ -1,12 +1,13 @@
 import { ContainerStyles } from './styles';
+import backgroundImg from '../../assets/background.png';
 
-import Header from '../Header';
+import Footer from '../Footer';
 
-function TemplateContainer({ children, backgroundImage }) {
+function TemplateContainer({ children }) {
   return (
-    <ContainerStyles backgroundImage={backgroundImage}>
-      <Header />
+    <ContainerStyles backgroundImage={backgroundImg}>
       {children}
+      <Footer />
     </ContainerStyles>
   );
 }

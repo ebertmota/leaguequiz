@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
+import Loader from 'react-loader-spinner';
 import db from '../../db.json';
 
 import TemplateContainer from '../components/TemplateContainer';
@@ -50,14 +51,7 @@ function Quiz() {
         )}&wins=${correctAnswers}&total=${totalQuestions}`,
       );
     }
-  }, [
-    currentQuestion,
-    totalQuestions,
-    router,
-    name,
-    isCorrect,
-    correctAnswers,
-  ]);
+  }, [currentQuestion, totalQuestions, router, name, correctAnswers]);
 
   const handleSubmit = useCallback(
     e => {
@@ -71,7 +65,7 @@ function Quiz() {
   );
 
   return (
-    <TemplateContainer backgroundImage={db.bg3}>
+    <TemplateContainer>
       <QuizContainer>
         <Widget maxWidth="600px">
           <WidgetHeader>
@@ -79,7 +73,15 @@ function Quiz() {
           </WidgetHeader>
 
           <WidgetContent>
-            <WidgetCover src={question.image} />
+            <WidgetCover src={question.image}>
+              <Loader
+                type="TailSpin"
+                color="#d13639"
+                height={40}
+                width={40}
+                timeout={3000}
+              />
+            </WidgetCover>
 
             <div>
               <h2>{question.title}</h2>
@@ -107,8 +109,7 @@ function Quiz() {
                         <label htmlFor={alternative}>{alternative}</label>
                         <input
                           onChange={() =>
-                            setSelectedAlternative(alternativeIndex)
-                          }
+                            setSelectedAlternative(alternativeIndex)}
                           type="radio"
                           name={currentQuestion}
                           id={alternative}
